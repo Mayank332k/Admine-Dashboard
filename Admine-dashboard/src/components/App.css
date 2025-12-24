@@ -1,0 +1,13 @@
+.parent {
+  display: flex;         
+  height: 100vh;         
+}
+
+.parent .sidebar {
+  width: 250px;          
+}
+
+.parent .dashboard {
+  flex: 1;               
+  padding: 20px;         
+}
