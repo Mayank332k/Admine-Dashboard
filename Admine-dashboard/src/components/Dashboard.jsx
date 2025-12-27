@@ -174,7 +174,7 @@ const Dashboard = ({ usersData }) => {
             onMouseEnter={() => setHoveredCard("login")}
             onMouseLeave={() => setHoveredCard(null)}
           >
-            <span style={styles.label}>Last Login</span>
+            <span style={styles.label}>Last Login(Static value)</span>
             <span style={styles.valueText}>
               Admin — Today, <span style={styles.highlight}>10:42</span> AM
             </span>

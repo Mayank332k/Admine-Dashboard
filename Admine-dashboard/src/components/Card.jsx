@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Card = ({ data, DeleteData }) => {
+const Card = ({ data, setdataId, setDelWar }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isDeleteHover, setIsDeleteHover] = useState(false);
 
@@ -133,7 +133,10 @@ const Card = ({ data, DeleteData }) => {
           style={styles.actionBtn}
           onMouseEnter={() => setIsDeleteHover(true)}
           onMouseLeave={() => setIsDeleteHover(false)}
-          onClick={() => DeleteData(data.id)}
+          onClick={() => {
+            setdataId(data.id);
+            setDelWar(true);
+          }}
         >
           ✖ Delete
         </span>
